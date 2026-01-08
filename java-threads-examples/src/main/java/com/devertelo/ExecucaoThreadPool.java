@@ -11,10 +11,10 @@ public class ExecucaoThreadPool {
 
         try (ExecutorService executorService = Executors.newFixedThreadPool(10000)) {
 
-            for (int i = 0; i < 50000; i++) {
-                var processo = new Processo().executar(i);
-                executorService.submit(processo);
-            }
+//            for (int i = 0; i < 50000; i++) {
+//                var processo = new Processo().executar(i);
+//                executorService.submit(processo);
+//            }
         }
 
         System.out.println(Duration.ofMillis(System.currentTimeMillis() - tempoInicio).toSeconds() + " segundos");
