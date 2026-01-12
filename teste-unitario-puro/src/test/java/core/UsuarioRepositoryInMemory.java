@@ -18,4 +18,7 @@ public class UsuarioRepositoryInMemory implements UsuarioRepository {
     public Usuario buscarPorId(Long id){
         return banco.get(id);
     }
+
+    @Override
+    public Usuario buscarPorEmail(String email){ return banco.get(email);}
 }
