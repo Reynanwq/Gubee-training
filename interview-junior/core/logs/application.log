@@ -2463,3 +2463,30 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
 	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[INFO ] [2026-01-15T11:53:07,536] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2026-01-15T11:53:07,546] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2026-01-15T11:53:21,509] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-15T11:53:21,543] [main] [Application] Starting Application using Java 17.0.13 on Reynan-Paiva with PID 32760 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-15T11:53:21,546] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-15T11:53:21,913] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-01-15T11:53:21,922] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-01-15T11:53:22,283] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-01-15T11:53:22,296] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-01-15T11:53:22,297] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-15T11:53:22,297] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-01-15T11:53:22,298] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-01-15T11:53:22,380] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-01-15T11:53:22,381] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 802 ms 
+[INFO ] [2026-01-15T11:53:22,507] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2026-01-15T11:53:22,589] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2026-01-15T11:53:22,618] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2026-01-15T11:53:22,619] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5435/postgres (PostgreSQL 13.23) 
+[INFO ] [2026-01-15T11:53:22,686] [main] [DbValidate] Successfully validated 3 migrations (execution time 00:00.032s) 
+[INFO ] [2026-01-15T11:53:22,700] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2026-01-15T11:53:22,702] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2026-01-15T11:53:23,022] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-15T11:53:23,041] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2026-01-15T11:53:23,049] [main] [Application] Started Application in 1.735 seconds (JVM running for 2.418) 
+[INFO ] [2026-01-15T11:54:57,672] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2026-01-15T11:54:57,673] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2026-01-15T11:54:57,674] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 1 ms 
