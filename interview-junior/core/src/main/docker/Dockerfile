@@ -1,13 +1,13 @@
-FROM openjdk:11-jre-slim-sid
+FROM eclipse-temurin:11-jre
 
 LABEL maintainer="Brainweb"
 LABEL version="1.0"
 
 ENV DB_NAME="postgres"
 ENV DB_HOSTNAME="localhost"
-ENV DB_PORT="5432"
-ENV DB_USERNAME="gubee"
-ENV DB_PWD="gubee"
+ENV DB_PORT="5435"
+ENV DB_USERNAME="postgres"
+ENV DB_PWD="postgres"
 
 EXPOSE 8080
 

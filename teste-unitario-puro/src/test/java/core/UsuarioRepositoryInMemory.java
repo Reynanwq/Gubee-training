@@ -20,5 +20,10 @@ public class UsuarioRepositoryInMemory implements UsuarioRepository {
     }
 
     @Override
-    public Usuario buscarPorEmail(String email){ return banco.get(email);}
+    public Usuario buscarPorEmail(String email){
+        return banco.values().stream()
+                .filter(usuario -> email.equals(usuario.getEmail()))
+                .findFirst()
+                .orElse(null);
+    }
 }
