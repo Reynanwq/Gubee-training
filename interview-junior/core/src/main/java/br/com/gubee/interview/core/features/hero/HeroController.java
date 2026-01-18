@@ -1,21 +1,22 @@
 package br.com.gubee.interview.core.features.hero;
 
 import br.com.gubee.interview.core.exception.HeroNotFoundException;
+import br.com.gubee.interview.core.response.*;
+import br.com.gubee.interview.core.response.UpdateHeroRequest;
 import br.com.gubee.interview.model.Hero;
 import br.com.gubee.interview.model.request.CreateHeroRequest;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
 import java.net.URI;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-
 import static java.lang.String.format;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.ResponseEntity.created;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
@@ -25,50 +26,96 @@ public class HeroController {
     private final HeroService heroService;
 
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> create(@Validated
-                                       @RequestBody CreateHeroRequest createHeroRequest) {
+    public ResponseEntity<HeroResponse> create(@Validated @RequestBody CreateHeroRequest createHeroRequest) {
         final UUID id = heroService.create(createHeroRequest);
-        return created(URI.create(format("/api/v1/heroes/%s", id))).build();
+
+        HeroResponse response = HeroResponse.builder()
+                .message("Herói cadastrado com sucesso!")
+                .id(id)
+                .location(format("/api/v1/heroes/%s", id))
+                .build();
+
+        return created(URI.create(format("/api/v1/heroes/%s", id)))
+                .body(response);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Hero> findById(@PathVariable String id) {
+    public ResponseEntity<?> findById(@PathVariable String id) {
         try {
             UUID uuid = UUID.fromString(id);
-            return heroService.findById(uuid)
-                    .map(ResponseEntity::ok)
-                    .orElse(ResponseEntity.notFound().build());
+            Optional<Hero> heroOptional = heroService.findById(uuid);
+
+            if (heroOptional.isPresent()) {
+                HeroFindResponse response = HeroFindResponse.builder()
+                        .message("Herói encontrado com sucesso!")
+                        .data(heroOptional.get())
+                        .build();
+                return ResponseEntity.ok(response);
+            } else {
+                ErrorResponse errorResponse = ErrorResponse.builder()
+                        .message("Herói não encontrado")
+                        .id(id)
+                        .build();
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+            }
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().build();
+            ErrorResponse errorResponse = ErrorResponse.builder()
+                    .message("ID inválido. Formato esperado: UUID")
+                    .id(id)
+                    .build();
+            return ResponseEntity.badRequest().body(errorResponse);
         }
     }
 
     @GetMapping
-    public ResponseEntity<List<Hero>> findByName(@RequestParam String name) {
+    public ResponseEntity<HeroListResponse> findByName(@RequestParam String name) {
         List<Hero> heroes = heroService.findByName(name);
-        return ResponseEntity.ok(heroes);
+
+        HeroListResponse response = HeroListResponse.builder()
+                .message(heroes.isEmpty() ? "Nenhum herói encontrado" : "Heróis encontrados com sucesso!")
+                .count(heroes.size())
+                .data(heroes)
+                .build();
+
+        return ResponseEntity.ok(response);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Void> update(
+    public ResponseEntity<?> update(
             @PathVariable UUID id,
-            @RequestBody Map<String, Object> updates) {
+            @Validated @RequestBody UpdateHeroRequest updates) {
 
         try {
             heroService.update(id, updates);
-            return ResponseEntity.ok().build();
+            HeroUpdateResponse response = HeroUpdateResponse.builder()
+                    .message("Herói atualizado com sucesso!")
+                    .id(id)
+                    .build();
+            return ResponseEntity.ok(response);
         } catch (HeroNotFoundException e) {
-            return ResponseEntity.notFound().build();
+            ErrorResponse errorResponse = ErrorResponse.builder()
+                    .message("Herói não encontrado para atualização")
+                    .id(id.toString())
+                    .build();
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
         }
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable UUID id) {
+    public ResponseEntity<?> delete(@PathVariable UUID id) {
         try {
             heroService.delete(id);
-            return ResponseEntity.ok().build();
+            HeroUpdateResponse response = HeroUpdateResponse.builder()
+                    .message("Herói deletado com sucesso!")
+                    .id(id)
+                    .build();
+            return ResponseEntity.ok(response);
         } catch (HeroNotFoundException e) {
-            return ResponseEntity.notFound().build();
+            ErrorResponse errorResponse = ErrorResponse.builder()
+                    .message("Herói não encontrado para exclusão")
+                    .id(id.toString())
+                    .build();
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
         }
     }
 }

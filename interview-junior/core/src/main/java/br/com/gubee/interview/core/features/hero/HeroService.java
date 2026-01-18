@@ -2,16 +2,15 @@ package br.com.gubee.interview.core.features.hero;
 
 import br.com.gubee.interview.core.exception.HeroNotFoundException;
 import br.com.gubee.interview.core.features.powerstats.PowerStatsRepository;
+import br.com.gubee.interview.core.response.UpdateHeroRequest;
 import br.com.gubee.interview.model.Hero;
 import br.com.gubee.interview.model.PowerStats;
 import br.com.gubee.interview.model.request.CreateHeroRequest;
-import br.com.gubee.interview.model.enums.Race;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -38,34 +37,52 @@ public class HeroService {
     }
 
     @Transactional
-    public void update(UUID id, Map<String, Object> updates) {
+    public void update(UUID id, UpdateHeroRequest updates) {
         Hero hero = heroRepository.findById(id)
                 .orElseThrow(() -> new HeroNotFoundException(id));
 
-        PowerStats powerStats = powerStatsRepository.findById(hero.getPowerStatsId())
-                .orElseThrow(() -> new RuntimeException("PowerStats not found for hero: " + id));
+        boolean heroUpdated = false;
+        if (updates.getName() != null && !updates.getName().equals(hero.getName())) {
+            hero.setName(updates.getName());
+            heroUpdated = true;
+        }
+        if (updates.getRace() != null && updates.getRace() != hero.getRace()) {
+            hero.setRace(updates.getRace());
+            heroUpdated = true;
+        }
 
-        if (updates.containsKey("name")) {
-            hero.setName((String) updates.get("name"));
+        if (heroUpdated) {
+            heroRepository.update(hero);
         }
-        if (updates.containsKey("race")) {
-            hero.setRace(Race.valueOf((String) updates.get("race")));
-        }
-        heroRepository.update(hero);
 
-        if (updates.containsKey("strength")) {
-            powerStats.setStrength((Integer) updates.get("strength"));
+        if (updates.getStrength() != null || updates.getAgility() != null ||
+                updates.getDexterity() != null || updates.getIntelligence() != null) {
+
+            PowerStats powerStats = powerStatsRepository.findById(hero.getPowerStatsId())
+                    .orElseThrow(() -> new RuntimeException("PowerStats not found for hero: " + id));
+
+            boolean powerStatsUpdated = false;
+            if (updates.getStrength() != null && !updates.getStrength().equals(powerStats.getStrength())) {
+                powerStats.setStrength(updates.getStrength());
+                powerStatsUpdated = true;
+            }
+            if (updates.getAgility() != null && !updates.getAgility().equals(powerStats.getAgility())) {
+                powerStats.setAgility(updates.getAgility());
+                powerStatsUpdated = true;
+            }
+            if (updates.getDexterity() != null && !updates.getDexterity().equals(powerStats.getDexterity())) {
+                powerStats.setDexterity(updates.getDexterity());
+                powerStatsUpdated = true;
+            }
+            if (updates.getIntelligence() != null && !updates.getIntelligence().equals(powerStats.getIntelligence())) {
+                powerStats.setIntelligence(updates.getIntelligence());
+                powerStatsUpdated = true;
+            }
+
+            if (powerStatsUpdated) {
+                powerStatsRepository.update(powerStats);
+            }
         }
-        if (updates.containsKey("agility")) {
-            powerStats.setAgility((Integer) updates.get("agility"));
-        }
-        if (updates.containsKey("dexterity")) {
-            powerStats.setDexterity((Integer) updates.get("dexterity"));
-        }
-        if (updates.containsKey("intelligence")) {
-            powerStats.setIntelligence((Integer) updates.get("intelligence"));
-        }
-        powerStatsRepository.update(powerStats);
     }
 
     @Transactional
@@ -74,7 +91,6 @@ public class HeroService {
                 .orElseThrow(() -> new HeroNotFoundException(id));
 
         heroRepository.delete(id);
-
         powerStatsRepository.delete(hero.getPowerStatsId());
     }
 }

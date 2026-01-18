@@ -6,7 +6,7 @@ items:
   kind: DeploymentConfig
   metadata:
     annotations:
-      fabric8.io/git-commit: 8a5458910e4236d5cf73a6d52da188289088881c
+      fabric8.io/git-commit: 886e2828cbc4879290370544ea432f19c7278d2c
       fabric8.io/git-branch: main
       fabric8.io/git-url: https://github.com/Reynanwq/Gubee-training.git
       fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/interview/interview-core
@@ -31,7 +31,7 @@ items:
     template:
       metadata:
         annotations:
-          fabric8.io/git-commit: 8a5458910e4236d5cf73a6d52da188289088881c
+          fabric8.io/git-commit: 886e2828cbc4879290370544ea432f19c7278d2c
           fabric8.io/git-branch: main
           fabric8.io/scm-tag: HEAD
           fabric8.io/git-url: https://github.com/Reynanwq/Gubee-training.git
