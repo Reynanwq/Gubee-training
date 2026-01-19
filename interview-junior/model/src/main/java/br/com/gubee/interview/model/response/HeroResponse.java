@@ -1,4 +1,4 @@
-package br.com.gubee.interview.core.response;
+package br.com.gubee.interview.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,8 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class HeroUpdateResponse {
-    private String message;
+public class HeroResponse {
     private UUID id;
+    private String message;
+    private String location;
 }

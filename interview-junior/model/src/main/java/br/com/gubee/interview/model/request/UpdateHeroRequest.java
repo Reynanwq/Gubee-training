@@ -1,4 +1,4 @@
-package br.com.gubee.interview.core.response;
+package br.com.gubee.interview.model.request;
 
 import br.com.gubee.interview.model.enums.Race;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,5 @@
-package br.com.gubee.interview.core.response;
+package br.com.gubee.interview.model.response;
 
-import br.com.gubee.interview.model.Hero;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class HeroFindResponse {
+public class HeroFindResponse<T> {
     private String message;
-    private Hero data;
+    private T data;
 }

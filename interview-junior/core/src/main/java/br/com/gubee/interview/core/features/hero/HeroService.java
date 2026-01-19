@@ -2,10 +2,11 @@ package br.com.gubee.interview.core.features.hero;
 
 import br.com.gubee.interview.core.exception.HeroNotFoundException;
 import br.com.gubee.interview.core.features.powerstats.PowerStatsRepository;
-import br.com.gubee.interview.core.response.UpdateHeroRequest;
 import br.com.gubee.interview.model.Hero;
 import br.com.gubee.interview.model.PowerStats;
+import br.com.gubee.interview.model.dto.HeroDTO;
 import br.com.gubee.interview.model.request.CreateHeroRequest;
+import br.com.gubee.interview.model.request.UpdateHeroRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -28,12 +30,36 @@ public class HeroService {
         return heroRepository.create(new Hero(createHeroRequest, powerStatsId));
     }
 
-    public Optional<Hero> findById(UUID id) {
-        return heroRepository.findById(id);
+    public Optional<HeroDTO> findById(UUID id) {
+        Optional<Hero> heroOptional = heroRepository.findById(id);
+
+        if (heroOptional.isEmpty()) {
+            return Optional.empty();
+        }
+
+        Hero hero = heroOptional.get();
+        Optional<PowerStats> powerStatsOptional = powerStatsRepository.findById(hero.getPowerStatsId());
+
+        if (powerStatsOptional.isEmpty()) {
+            throw new RuntimeException("PowerStats not found for hero: " + id);
+        }
+
+        PowerStats powerStats = powerStatsOptional.get();
+        return Optional.of(HeroDTO.fromHeroAndPowerStats(hero, powerStats));
     }
 
-    public List<Hero> findByName(String name) {
-        return heroRepository.findByName(name);
+    public List<HeroDTO> findByName(String name) {
+        List<Hero> heroes = heroRepository.findByName(name);
+
+        return heroes.stream()
+                .map(hero -> {
+                    Optional<PowerStats> powerStatsOptional = powerStatsRepository.findById(hero.getPowerStatsId());
+                    if (powerStatsOptional.isEmpty()) {
+                        throw new RuntimeException("PowerStats not found for hero: " + hero.getId());
+                    }
+                    return HeroDTO.fromHeroAndPowerStats(hero, powerStatsOptional.get());
+                })
+                .collect(Collectors.toList());
     }
 
     @Transactional
@@ -84,7 +110,6 @@ public class HeroService {
             }
         }
     }
-
     @Transactional
     public void delete(UUID id) {
         Hero hero = heroRepository.findById(id)

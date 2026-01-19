@@ -1,7 +1,5 @@
-package br.com.gubee.interview.core.response;
+package br.com.gubee.interview.model.response;
 
-
-import br.com.gubee.interview.model.Hero;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,8 +11,8 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class HeroListResponse {
+public class HeroListResponse<T> {
     private String message;
     private int count;
-    private List<Hero> data;
+    private List<T> data;
 }

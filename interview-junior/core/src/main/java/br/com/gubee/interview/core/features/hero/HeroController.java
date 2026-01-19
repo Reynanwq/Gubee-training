@@ -1,22 +1,28 @@
 package br.com.gubee.interview.core.features.hero;
 
 import br.com.gubee.interview.core.exception.HeroNotFoundException;
-import br.com.gubee.interview.core.response.*;
-import br.com.gubee.interview.core.response.UpdateHeroRequest;
-import br.com.gubee.interview.model.Hero;
+import br.com.gubee.interview.model.dto.HeroDTO;
 import br.com.gubee.interview.model.request.CreateHeroRequest;
+import br.com.gubee.interview.model.request.UpdateHeroRequest;
+import br.com.gubee.interview.model.response.ErrorResponse;
+import br.com.gubee.interview.model.response.HeroFindResponse;
+import br.com.gubee.interview.model.response.HeroListResponse;
+import br.com.gubee.interview.model.response.HeroResponse;
+import br.com.gubee.interview.model.response.HeroUpdateResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 import java.net.URI;
-import static java.lang.String.format;
-import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
-import static org.springframework.http.ResponseEntity.created;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+
+import static java.lang.String.format;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.ResponseEntity.created;
 
 @RestController
 @RequiredArgsConstructor
@@ -43,12 +49,12 @@ public class HeroController {
     public ResponseEntity<?> findById(@PathVariable String id) {
         try {
             UUID uuid = UUID.fromString(id);
-            Optional<Hero> heroOptional = heroService.findById(uuid);
+            Optional<HeroDTO> heroOptional = heroService.findById(uuid);
 
             if (heroOptional.isPresent()) {
-                HeroFindResponse response = HeroFindResponse.builder()
+                HeroFindResponse<HeroDTO> response = HeroFindResponse.<HeroDTO>builder()
                         .message("Herói encontrado com sucesso!")
-                        .data(heroOptional.get())
+                        .data(heroOptional.get()) // HeroDTO
                         .build();
                 return ResponseEntity.ok(response);
             } else {
@@ -68,10 +74,10 @@ public class HeroController {
     }
 
     @GetMapping
-    public ResponseEntity<HeroListResponse> findByName(@RequestParam String name) {
-        List<Hero> heroes = heroService.findByName(name);
+    public ResponseEntity<HeroListResponse<HeroDTO>> findByName(@RequestParam String name) {
+        List<HeroDTO> heroes = heroService.findByName(name);
 
-        HeroListResponse response = HeroListResponse.builder()
+        HeroListResponse<HeroDTO> response = HeroListResponse.<HeroDTO>builder()
                 .message(heroes.isEmpty() ? "Nenhum herói encontrado" : "Heróis encontrados com sucesso!")
                 .count(heroes.size())
                 .data(heroes)

@@ -458,3 +458,629 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 [INFO ] [2026-01-18T19:51:00,571] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
 [INFO ] [2026-01-18T19:51:00,589] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
 [INFO ] [2026-01-18T19:51:00,597] [main] [Application] Started Application in 1.968 seconds (JVM running for 2.613) 
+[INFO ] [2026-01-18T20:29:01,511] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2026-01-18T20:29:01,514] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+O ] [2026-01-18T20:17:08,500] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:17:08,500] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:17:08,613] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:17:08,616] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:17:08,633] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:17:08,957] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:17:08,998] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 22876 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:17:09,003] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:17:10,757] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:17:10,758] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:17:10,759] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:17:10,784] [main] [HeroControllerTest] Started HeroControllerTest in 2.112 seconds (JVM running for 3.417) 
+[INFO ] [2026-01-18T20:25:47,307] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:25:47,313] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:25:47,313] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:25:47,408] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:25:47,411] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:25:47,425] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:25:47,691] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:25:47,731] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 23524 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:25:47,734] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:25:49,162] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:25:49,163] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:25:49,164] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:25:49,185] [main] [HeroControllerTest] Started HeroControllerTest in 1.725 seconds (JVM running for 2.76) 
+[INFO ] [2026-01-18T20:26:06,897] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:26:06,903] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:26:06,903] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:26:07,001] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:26:07,004] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:26:07,019] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:26:07,292] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:26:07,330] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 26324 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:26:07,333] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:26:08,811] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:26:08,811] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:26:08,813] [main] [TestDispatcherServlet] Completed initialization in 2 ms 
+[INFO ] [2026-01-18T20:26:08,836] [main] [HeroControllerTest] Started HeroControllerTest in 1.783 seconds (JVM running for 2.881) 
+[INFO ] [2026-01-18T20:27:41,377] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:27:41,384] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:27:41,385] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:27:41,480] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:27:41,482] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:27:41,495] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:27:41,739] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:27:41,774] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 28536 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:27:41,777] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:27:43,238] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:27:43,238] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:27:43,239] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:27:43,264] [main] [HeroControllerTest] Started HeroControllerTest in 1.734 seconds (JVM running for 2.779) 
+[INFO ] [2026-01-18T20:28:45,096] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:28:45,103] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:28:45,103] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:28:45,200] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:28:45,203] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:28:45,218] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:28:45,486] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:28:45,520] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 28280 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:28:45,524] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:28:46,940] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:28:46,940] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:28:46,941] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:28:46,966] [main] [HeroControllerTest] Started HeroControllerTest in 1.713 seconds (JVM running for 2.767) 
+[INFO ] [2026-01-18T20:29:16,651] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:29:16,658] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:29:16,658] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:29:16,752] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:29:16,755] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:29:16,769] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:29:17,035] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:29:17,067] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 30012 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:29:17,069] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:29:18,482] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:29:18,482] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:29:18,483] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:29:18,506] [main] [HeroControllerTest] Started HeroControllerTest in 1.7 seconds (JVM running for 2.769) 
+[INFO ] [2026-01-18T20:29:41,660] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:29:41,668] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:29:41,668] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:29:41,761] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:29:41,764] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:29:41,779] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:29:42,148] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:29:42,199] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 16900 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:29:42,204] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:29:44,032] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:29:44,032] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:29:44,033] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T20:29:44,061] [main] [HeroControllerTest] Started HeroControllerTest in 2.25 seconds (JVM running for 3.295) 
+[INFO ] [2026-01-18T20:30:51,252] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T20:30:51,260] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T20:30:51,261] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T20:30:51,376] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T20:30:51,380] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T20:30:51,395] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T20:30:51,689] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:30:51,726] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 3740 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:30:51,730] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:30:53,468] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T20:30:53,468] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T20:30:53,470] [main] [TestDispatcherServlet] Completed initialization in 2 ms 
+[INFO ] [2026-01-18T20:30:53,496] [main] [HeroControllerTest] Started HeroControllerTest in 2.061 seconds (JVM running for 3.396) 
+[INFO ] [2026-01-18T20:31:28,260] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:31:28,302] [main] [Application] Starting Application using Java 17.0.13 on Reynan-Paiva with PID 30992 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:31:28,307] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:31:28,789] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-01-18T20:31:28,799] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-01-18T20:31:29,261] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-01-18T20:31:29,280] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-01-18T20:31:29,281] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-18T20:31:29,282] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-01-18T20:31:29,282] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-01-18T20:31:29,384] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-01-18T20:31:29,386] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1033 ms 
+[INFO ] [2026-01-18T20:31:29,517] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[ERROR] [2026-01-18T20:31:30,556] [main] [HikariPool] HikariPool-1 - Exception during pool initialization. 
+org.postgresql.util.PSQLException: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.makeConnection(Driver.java:402) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.connect(Driver.java:261) ~[postgresql-42.3.4.jar:42.3.4]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:52) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.7.jar:2.6.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at br.com.gubee.interview.core.Application.main(Application.java:12) ~[classes/:?]
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:639) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235) ~[postgresql-42.3.4.jar:42.3.4]
+	... 78 more
+[WARN ] [2026-01-18T20:31:30,682] [main] [AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroController' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroService' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroRepository' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+ 
+[INFO ] [2026-01-18T20:31:30,686] [main] [StandardService] Stopping service [Tomcat] 
+[INFO ] [2026-01-18T20:31:30,698] [main] [ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[ERROR] [2026-01-18T20:31:30,714] [main] [SpringApplication] Application run failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroController' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroService' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroRepository' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at br.com.gubee.interview.core.Application.main(Application.java:12) ~[classes/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroService' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroRepository' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroRepository' defined in file [C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes\br\com\gubee\interview\core\features\hero\HeroRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:67) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.7.jar:2.6.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5435 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.makeConnection(Driver.java:402) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.connect(Driver.java:261) ~[postgresql-42.3.4.jar:42.3.4]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:52) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.7.jar:2.6.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:639) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.makeConnection(Driver.java:402) ~[postgresql-42.3.4.jar:42.3.4]
+	at org.postgresql.Driver.connect(Driver.java:261) ~[postgresql-42.3.4.jar:42.3.4]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:52) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) ~[flyway-core-8.0.5.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.7.jar:2.6.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 19 more
+[INFO ] [2026-01-18T20:36:49,267] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T20:36:49,292] [main] [Application] Starting Application using Java 17.0.13 on Reynan-Paiva with PID 7988 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T20:36:49,296] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T20:36:49,653] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-01-18T20:36:49,661] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-01-18T20:36:50,021] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-01-18T20:36:50,034] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-01-18T20:36:50,035] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-18T20:36:50,036] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-01-18T20:36:50,036] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-01-18T20:36:50,122] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-01-18T20:36:50,122] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 795 ms 
+[INFO ] [2026-01-18T20:36:50,229] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2026-01-18T20:36:50,342] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2026-01-18T20:36:50,357] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2026-01-18T20:36:50,357] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5435/postgres (PostgreSQL 18.1) 
+[WARN ] [2026-01-18T20:36:50,366] [main] [Database] Flyway upgrade recommended: PostgreSQL 18.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14. 
+[INFO ] [2026-01-18T20:36:50,434] [main] [Schema] Creating schema "interview_service" ... 
+[INFO ] [2026-01-18T20:36:50,439] [main] [JdbcTableSchemaHistory] Creating Schema History table "interview_service"."flyway_schema_history" ... 
+[INFO ] [2026-01-18T20:36:50,480] [main] [DbMigrate] Current version of schema "interview_service": null 
+[INFO ] [2026-01-18T20:36:50,485] [main] [DbMigrate] Migrating schema "interview_service" to version "1.0 - power stats ddl" 
+[INFO ] [2026-01-18T20:36:50,508] [main] [DbMigrate] Migrating schema "interview_service" to version "1.1 - hero ddl" 
+[WARN ] [2026-01-18T20:36:50,511] [main] [DefaultSqlScriptExecutor] DB: extension "uuid-ossp" already exists, skipping (SQL State: 42710 - Error Code: 0) 
+[INFO ] [2026-01-18T20:36:50,531] [main] [DbMigrate] Successfully applied 2 migrations to schema "interview_service", now at version v1.1 (execution time 00:00.058s) 
+[INFO ] [2026-01-18T20:36:50,824] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-18T20:36:50,843] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2026-01-18T20:36:50,850] [main] [Application] Started Application in 1.765 seconds (JVM running for 2.335) 
+[INFO ] [2026-01-18T20:37:11,154] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2026-01-18T20:37:11,154] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2026-01-18T20:37:11,156] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 2 ms 
+[INFO ] [2026-01-18T20:56:05,728] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2026-01-18T20:56:05,734] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2026-01-18T21:05:28,711] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T21:05:28,719] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T21:05:28,720] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T21:05:28,830] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T21:05:28,833] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T21:05:28,851] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3961a41a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4ed68f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367795c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2387c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3956b302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1500e009, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1fd386c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@edf4f36, org.springframework.test.context.event.EventPublishingTestExecutionListener@29d334c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@100f9bbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e9f2e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c4bc9fc] 
+[INFO ] [2026-01-18T21:05:29,169] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T21:05:29,210] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 23324 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T21:05:29,216] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T21:05:30,976] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T21:05:30,976] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T21:05:30,977] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T21:05:31,005] [main] [HeroControllerTest] Started HeroControllerTest in 2.109 seconds (JVM running for 3.336) 
+[INFO ] [2026-01-18T21:06:48,817] [main] [WebMvcTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest], using SpringBootContextLoader 
+[INFO ] [2026-01-18T21:06:48,825] [main] [AbstractContextLoader] Could not detect default resource locations for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. 
+[INFO ] [2026-01-18T21:06:48,826] [main] [AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [br.com.gubee.interview.core.features.hero.HeroControllerTest]: HeroControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+[INFO ] [2026-01-18T21:06:48,949] [main] [SpringBootTestContextBootstrapper] Found @SpringBootConfiguration br.com.gubee.interview.core.Application for test class br.com.gubee.interview.core.features.hero.HeroControllerTest 
+[INFO ] [2026-01-18T21:06:48,953] [main] [WebMvcTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+[INFO ] [2026-01-18T21:06:48,968] [main] [WebMvcTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@367795c7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d2387c8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3956b302, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1500e009, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1fd386c3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@edf4f36, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29d334c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@100f9bbe, org.springframework.test.context.event.EventPublishingTestExecutionListener@13e9f2e2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@673bb956, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@cd7f1ae, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@60e949e1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c4bc9fc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@680362a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3569edd5] 
+[INFO ] [2026-01-18T21:06:49,295] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T21:06:49,338] [main] [HeroControllerTest] Starting HeroControllerTest using Java 17.0.13 on Reynan-Paiva with PID 15396 (started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T21:06:49,342] [main] [HeroControllerTest] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T21:06:51,208] [main] [SpringBootMockServletContext] Initializing Spring TestDispatcherServlet '' 
+[INFO ] [2026-01-18T21:06:51,208] [main] [TestDispatcherServlet] Initializing Servlet '' 
+[INFO ] [2026-01-18T21:06:51,210] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-01-18T21:06:51,240] [main] [HeroControllerTest] Started HeroControllerTest in 2.234 seconds (JVM running for 3.539) 
+[INFO ] [2026-01-18T21:07:47,823] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-01-18T21:07:47,852] [main] [Application] Starting Application using Java 17.0.13 on Reynan-Paiva with PID 20060 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-01-18T21:07:47,855] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-01-18T21:07:48,223] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-01-18T21:07:48,230] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-01-18T21:07:48,581] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-01-18T21:07:48,594] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-01-18T21:07:48,594] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-18T21:07:48,595] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-01-18T21:07:48,595] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-01-18T21:07:48,674] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-01-18T21:07:48,674] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 789 ms 
+[INFO ] [2026-01-18T21:07:48,784] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2026-01-18T21:07:48,870] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2026-01-18T21:07:48,890] [main] [VersionPrinter] Flyway Community Edition 8.0.5 by Redgate 
+[INFO ] [2026-01-18T21:07:48,891] [main] [BaseDatabaseType] Database: jdbc:postgresql://localhost:5435/postgres (PostgreSQL 13.23) 
+[INFO ] [2026-01-18T21:07:48,940] [main] [DbValidate] Successfully validated 3 migrations (execution time 00:00.021s) 
+[INFO ] [2026-01-18T21:07:48,950] [main] [DbMigrate] Current version of schema "interview_service": 1.1 
+[INFO ] [2026-01-18T21:07:48,952] [main] [DbMigrate] Schema "interview_service" is up to date. No migration necessary. 
+[INFO ] [2026-01-18T21:07:49,273] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-01-18T21:07:49,286] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2026-01-18T21:07:49,294] [main] [Application] Started Application in 1.654 seconds (JVM running for 2.23) 
+[INFO ] [2026-01-18T21:11:47,150] [http-nio-8080-exec-2] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2026-01-18T21:11:47,150] [http-nio-8080-exec-2] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2026-01-18T21:11:47,151] [http-nio-8080-exec-2] [DispatcherServlet] Completed initialization in 1 ms 
