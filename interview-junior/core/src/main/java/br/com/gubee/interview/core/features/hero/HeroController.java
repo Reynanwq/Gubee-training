@@ -94,13 +94,13 @@ public class HeroController {
         try {
             heroService.update(id, updates);
             HeroUpdateResponse response = HeroUpdateResponse.builder()
-                    .message("Herói atualizado com sucesso!")
+                    .message("Herói atualizado!")
                     .id(id)
                     .build();
             return ResponseEntity.ok(response);
         } catch (HeroNotFoundException e) {
             ErrorResponse errorResponse = ErrorResponse.builder()
-                    .message("Herói não encontrado para atualização")
+                    .message("Herói não encontrado")
                     .id(id.toString())
                     .build();
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
