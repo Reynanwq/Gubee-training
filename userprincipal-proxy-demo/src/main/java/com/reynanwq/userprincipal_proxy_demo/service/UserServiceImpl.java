@@ -22,7 +22,6 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public User createUser(User user) {
-        // Criptografa senha antes de salvar
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
     }
@@ -47,13 +46,31 @@ public class UserServiceImpl implements UserService {
     @Override
     public Principal getUserPrincipalWithProxy(String username) {
         User user = getUserByUsername(username);
-        return securityProxyFactory.createPrincipal(user, true);
+        return securityProxyFactory.createPrincipal(
+                user,
+                SecurityProxyFactory.ProxyType.CACHE
+        );
     }
 
     @Override
     public Principal getUserPrincipalWithoutProxy(String username) {
         User user = getUserByUsername(username);
-        return securityProxyFactory.createPrincipal(user, false);
+        return securityProxyFactory.createPrincipal(
+                user,
+                SecurityProxyFactory.ProxyType.NO_PROXY
+        );
+    }
+
+    public Principal getValidationProxy(String username) {
+        User user = getUserByUsername(username);
+        return securityProxyFactory.createPrincipal(
+                user,
+                SecurityProxyFactory.ProxyType.VALIDATION
+        );
+    }
+
+    public void clearUserCache(String username) {
+        System.out.println("Cache limpo para usuário: " + username);
     }
 }
 

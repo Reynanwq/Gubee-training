@@ -18,4 +18,6 @@ public interface UserService {
     Principal getUserPrincipalWithProxy(String username);
 
     Principal getUserPrincipalWithoutProxy(String username);
+
+    Principal getValidationProxy(String username);
 }

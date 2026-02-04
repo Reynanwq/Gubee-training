@@ -91,7 +91,6 @@ public class UserController {
 
         Principal principal = userService.getUserPrincipalWithProxy(username);
 
-        // Estas chamadas serão interceptadas pelo Proxy
         String name = principal.getName();
 
         Map<String, Object> result = new HashMap<>();
@@ -128,6 +127,107 @@ public class UserController {
     @GetMapping("/admin/users")
     public ResponseEntity<?> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
+    }
+
+
+    /**
+     * Testa múltiplos acessos para demonstrar o cache
+     */
+    @GetMapping("/demo/cache-test/{username}")
+    public ResponseEntity<Map<String, Object>> cacheTest(@PathVariable String username) {
+
+        System.out.println("\n\n========== TESTE DE CACHE ==========\n");
+
+        Principal principal = userService.getUserPrincipalWithProxy(username);
+        Authentication auth = (Authentication) principal;
+
+        // Primeira chamada - vai buscar do banco
+        System.out.println("\n--- Primeira chamada getAuthorities() ---");
+        auth.getAuthorities();
+
+        // Segunda chamada - deve usar cache
+        System.out.println("\n--- Segunda chamada getAuthorities() (deve usar cache) ---");
+        auth.getAuthorities();
+
+        // Terceira chamada - ainda no cache
+        System.out.println("\n--- Terceira chamada getAuthorities() (ainda no cache) ---");
+        auth.getAuthorities();
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("username", username);
+        result.put("test", "Cache de authorities");
+        result.put("message", "Verifique os logs para ver o cache funcionando");
+
+        return ResponseEntity.ok(result);
+    }
+
+    /**
+     * Testa proxy de validação
+     */
+    @GetMapping("/demo/validation-proxy/{username}")
+    public ResponseEntity<Map<String, Object>> validationProxyTest(@PathVariable String username) {
+
+        System.out.println("\n\n========== TESTE DE VALIDAÇÃO ==========\n");
+
+        Principal principal = userService.getValidationProxy(username);
+
+        // Testa diferentes métodos
+        System.out.println("\n--- Testando métodos de validação ---");
+        if (principal instanceof org.springframework.security.core.userdetails.UserDetails) {
+            org.springframework.security.core.userdetails.UserDetails userDetails =
+                    (org.springframework.security.core.userdetails.UserDetails) principal;
+
+            System.out.println("isEnabled: " + userDetails.isEnabled());
+            System.out.println("isAccountNonLocked: " + userDetails.isAccountNonLocked());
+            System.out.println("isCredentialsNonExpired: " + userDetails.isCredentialsNonExpired());
+        }
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("username", username);
+        result.put("proxyType", "Validation Proxy");
+        result.put("horaAtual", java.time.LocalTime.now().toString());
+
+        return ResponseEntity.ok(result);
+    }
+
+    /**
+     * Compara performance com e sem proxy
+     */
+    @GetMapping("/demo/performance/{username}")
+    public ResponseEntity<Map<String, Object>> performanceTest(@PathVariable String username) {
+
+        System.out.println("\n\n========== TESTE DE PERFORMANCE ==========\n");
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("username", username);
+
+        // Teste SEM proxy
+        System.out.println("\n--- Performance SEM proxy ---");
+        long startWithoutProxy = System.currentTimeMillis();
+        Principal withoutProxy = userService.getUserPrincipalWithoutProxy(username);
+        for (int i = 0; i < 100; i++) {
+            withoutProxy.getName();
+            if (withoutProxy instanceof org.springframework.security.core.userdetails.UserDetails) {
+                ((org.springframework.security.core.userdetails.UserDetails) withoutProxy).getAuthorities();
+            }
+        }
+        long endWithoutProxy = System.currentTimeMillis();
+        result.put("tempoSemProxy", (endWithoutProxy - startWithoutProxy) + "ms");
+
+        // Teste COM proxy
+        System.out.println("\n--- Performance COM proxy (com cache) ---");
+        long startWithProxy = System.currentTimeMillis();
+        Principal withProxy = userService.getUserPrincipalWithProxy(username);
+        for (int i = 0; i < 100; i++) {
+            withProxy.getName();
+            if (withProxy instanceof org.springframework.security.core.userdetails.UserDetails) {
+                ((org.springframework.security.core.userdetails.UserDetails) withProxy).getAuthorities();
+            }
+        }
+        long endWithProxy = System.currentTimeMillis();
+        result.put("tempoComProxy", (endWithProxy - startWithProxy) + "ms");
+
+        return ResponseEntity.ok(result);
     }
 }
 

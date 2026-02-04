@@ -22,7 +22,6 @@ public class SecurityConfig {
 
     private final UserRepository userRepository;
 
-    // Construtor explícito (sem Lombok)
     @Autowired
     public SecurityConfig(UserRepository userRepository) {
         this.userRepository = userRepository;
