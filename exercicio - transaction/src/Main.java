@@ -1,34 +1,41 @@
-import java.lang.reflect.Proxy;
-
 public class Main {
 
     public static void main(String[] args) {
-        DatabaseService realService = new DatabaseServiceImpl();
+        System.out.println("=== TESTE COM FACTORY E MÚLTIPLOS PROXIES ===\n");
 
-        DatabaseService proxyService = (DatabaseService) Proxy.newProxyInstance(
-                DatabaseService.class.getClassLoader(),
-                new Class[]{DatabaseService.class},
-                new TransactionInvocationHandler(realService)
-        );
+        // Teste 1: Proxy com transações
+        System.out.println("--- TESTE 1: PROXY COM TRANSAÇÕES ---");
+        DatabaseService transactionalService = DatabaseServiceFactory.createService(ProxyType.WITH_TRANSACTION);
+        testarServico(transactionalService);
 
-        System.out.println("=== TESTE DE TRANSAÇÕES ===\n");
+        System.out.println("\n--- TESTE 2: SERVIÇO DIRETO (SEM PROXY) ---");
+        DatabaseService realService = DatabaseServiceFactory.createService(ProxyType.NO_PROXY);
+        testarServico(realService);
 
-        proxyService.salvarUsuario("Reynan Paiva    ");
+        System.out.println("\n--- TESTE 3: PROXY SIMPLES (SEM TRANSAÇÕES) ---");
+        DatabaseService simpleProxyService = DatabaseServiceFactory.createService(ProxyType.SIMPLE_PROXY);
+        testarServico(simpleProxyService);
+    }
+
+    private static void testarServico(DatabaseService service) {
         System.out.println();
 
-        proxyService.atualizarUsuario("Maria Santos");
+        service.salvarUsuario("Reynan Paiva");
         System.out.println();
 
-        proxyService.consultarUsuario("Pedro Oliveira");
+        service.atualizarUsuario("Maria Santos");
+        System.out.println();
+
+        service.consultarUsuario("Pedro Oliveira");
         System.out.println();
 
         try {
-            proxyService.deletarUsuario("admin");
+            service.deletarUsuario("admin");
         } catch (Exception e) {
-            System.out.println("  -> Exceção capturada no main: " + e.getMessage());
+            System.out.println("  -> Exceção capturada: " + e.getMessage());
         }
         System.out.println();
 
-        proxyService.deletarUsuario("João Silva");
+        service.deletarUsuario("João Silva");
     }
 }
