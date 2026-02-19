@@ -1,75 +1,47 @@
 package br.com.gubee.interview.core.features.hero;
 
-import br.com.gubee.interview.model.Hero;
-import br.com.gubee.interview.model.PowerStats;
-import br.com.gubee.interview.model.enums.Race;
-import br.com.gubee.interview.core.features.powerstats.PowerStatsRepository;
+import br.com.gubee.interview.core.infrastructure.persistence.entities.HeroEntity;
+import br.com.gubee.interview.core.infrastructure.persistence.entities.PowerStatsEntity;
+import br.com.gubee.interview.model.domain.entities.Hero;
+import br.com.gubee.interview.model.domain.entities.PowerStats;
+import br.com.gubee.interview.model.domain.enums.Race;
+import br.com.gubee.interview.model.domain.repositories.HeroRepository;
+import br.com.gubee.interview.model.domain.repositories.PowerStatsRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HeroRepositoryIT extends BaseIntegrationTest{
+@SpringBootTest
+@ActiveProfiles("it")
+@Transactional
+class HeroRepositoryIT {
+
     @Autowired
     private HeroRepository heroRepository;
 
     @Autowired
     private PowerStatsRepository powerStatsRepository;
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-
     private UUID powerStatsId;
     private Hero hero;
 
     @BeforeEach
     void setUp() {
-
-        jdbcTemplate.execute("CREATE SCHEMA IF NOT EXISTS public");
-
-        jdbcTemplate.execute("SET search_path TO public");
-
-        jdbcTemplate.execute(
-                "CREATE TABLE IF NOT EXISTS power_stats (" +
-                        "    id           UUID PRIMARY KEY NOT NULL DEFAULT gen_random_uuid()," +
-                        "    strength     SMALLINT         NOT NULL," +
-                        "    agility      SMALLINT         NOT NULL," +
-                        "    dexterity    SMALLINT         NOT NULL," +
-                        "    intelligence SMALLINT         NOT NULL," +
-                        "    created_at   TIMESTAMPTZ      NOT NULL DEFAULT now()," +
-                        "    updated_at   TIMESTAMPTZ      NOT NULL DEFAULT now()" +
-                        ")"
-        );
-
-        jdbcTemplate.execute(
-                "CREATE TABLE IF NOT EXISTS hero (" +
-                        "    id             UUID PRIMARY KEY NOT NULL DEFAULT gen_random_uuid()," +
-                        "    name           VARCHAR(255)     NOT NULL UNIQUE," +
-                        "    race           VARCHAR(255)     NOT NULL," +
-                        "    power_stats_id UUID             NOT NULL," +
-                        "    enabled        BOOLEAN          NOT NULL DEFAULT TRUE," +
-                        "    created_at     TIMESTAMPTZ      NOT NULL DEFAULT now()," +
-                        "    updated_at     TIMESTAMPTZ      NOT NULL DEFAULT now()," +
-                        "    CHECK ( race IN ('HUMAN', 'ALIEN', 'DIVINE', 'CYBORG'))," +
-                        "    CONSTRAINT FK_power_stats FOREIGN KEY (power_stats_id) REFERENCES power_stats(id)" +
-                        ")"
-        );
-
-        jdbcTemplate.execute("DELETE FROM hero");
-        jdbcTemplate.execute("DELETE FROM power_stats");
-
         PowerStats powerStats = PowerStats.builder()
                 .strength(10)
                 .agility(8)
                 .dexterity(9)
                 .intelligence(7)
-                .createdAt(Instant.now())
-                .updatedAt(Instant.now())
                 .build();
 
         powerStatsId = powerStatsRepository.create(powerStats);
@@ -78,8 +50,6 @@ public class HeroRepositoryIT extends BaseIntegrationTest{
                 .name("Superman")
                 .race(Race.ALIEN)
                 .powerStatsId(powerStatsId)
-                .createdAt(Instant.now())
-                .updatedAt(Instant.now())
                 .enabled(true)
                 .build();
     }
@@ -126,7 +96,10 @@ public class HeroRepositoryIT extends BaseIntegrationTest{
     void update_shouldUpdateHeroInDatabase() {
         UUID heroId = heroRepository.create(hero);
 
-        Hero heroToUpdate = heroRepository.findById(heroId).get();
+        Optional<Hero> heroOptional = heroRepository.findById(heroId);
+        assertThat(heroOptional).isPresent();
+
+        Hero heroToUpdate = heroOptional.get();
         heroToUpdate.setName("Superman Updated");
         heroToUpdate.setRace(Race.DIVINE);
 

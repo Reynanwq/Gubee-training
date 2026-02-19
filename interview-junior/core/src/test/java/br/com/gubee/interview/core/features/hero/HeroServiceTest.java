@@ -1,13 +1,18 @@
 package br.com.gubee.interview.core.features.hero;
 
-import br.com.gubee.interview.core.exception.HeroNotFoundException;
-import br.com.gubee.interview.core.features.powerstats.PowerStatsRepository;
-import br.com.gubee.interview.model.Hero;
-import br.com.gubee.interview.model.PowerStats;
+import br.com.gubee.interview.core.application.usecases.hero.CreateHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.DeleteHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.FindHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.UpdateHeroUseCase;
+import br.com.gubee.interview.model.domain.entities.Hero;
+import br.com.gubee.interview.model.domain.entities.PowerStats;
+import br.com.gubee.interview.model.domain.enums.Race;
+import br.com.gubee.interview.model.domain.repositories.HeroRepository;
+import br.com.gubee.interview.model.domain.repositories.PowerStatsRepository;
 import br.com.gubee.interview.model.dto.HeroDTO;
-import br.com.gubee.interview.model.enums.Race;
-import br.com.gubee.interview.model.request.CreateHeroRequest;
-import br.com.gubee.interview.model.request.UpdateHeroRequest;
+import br.com.gubee.interview.model.dto.request.CreateHeroRequest;
+import br.com.gubee.interview.model.dto.request.UpdateHeroRequest;
+import br.com.gubee.interview.model.exceptions.HeroNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -34,7 +39,16 @@ class HeroServiceTest {
     private PowerStatsRepository powerStatsRepository;
 
     @InjectMocks
-    private HeroService heroService;
+    private CreateHeroUseCase createHeroUseCase;
+
+    @InjectMocks
+    private FindHeroUseCase findHeroUseCase;
+
+    @InjectMocks
+    private UpdateHeroUseCase updateHeroUseCase;
+
+    @InjectMocks
+    private DeleteHeroUseCase deleteHeroUseCase;
 
     private UUID heroId;
     private UUID powerStatsId;
@@ -82,10 +96,9 @@ class HeroServiceTest {
         when(powerStatsRepository.create(any(PowerStats.class))).thenReturn(powerStatsId);
         when(heroRepository.create(any(Hero.class))).thenReturn(heroId);
 
-        UUID result = heroService.create(createHeroRequest);
+        UUID result = createHeroUseCase.execute(createHeroRequest);
 
         assertThat(result).isEqualTo(heroId);
-
         verify(powerStatsRepository).create(any(PowerStats.class));
         verify(heroRepository).create(any(Hero.class));
     }
@@ -95,7 +108,7 @@ class HeroServiceTest {
         when(heroRepository.findById(heroId)).thenReturn(Optional.of(hero));
         when(powerStatsRepository.findById(powerStatsId)).thenReturn(Optional.of(powerStats));
 
-        Optional<HeroDTO> result = heroService.findById(heroId);
+        Optional<HeroDTO> result = findHeroUseCase.findById(heroId);
 
         assertThat(result).isPresent();
         HeroDTO heroDTO = result.get();
@@ -112,7 +125,7 @@ class HeroServiceTest {
     void findById_shouldReturnEmptyWhenHeroNotFound() {
         when(heroRepository.findById(heroId)).thenReturn(Optional.empty());
 
-        Optional<HeroDTO> result = heroService.findById(heroId);
+        Optional<HeroDTO> result = findHeroUseCase.findById(heroId);
 
         assertThat(result).isEmpty();
         verify(powerStatsRepository, never()).findById(any());
@@ -123,7 +136,7 @@ class HeroServiceTest {
         when(heroRepository.findById(heroId)).thenReturn(Optional.of(hero));
         when(powerStatsRepository.findById(powerStatsId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> heroService.findById(heroId))
+        assertThatThrownBy(() -> findHeroUseCase.findById(heroId))
                 .isInstanceOf(RuntimeException.class)
                 .hasMessageContaining("PowerStats not found for hero: " + heroId);
     }
@@ -136,7 +149,7 @@ class HeroServiceTest {
 
         when(heroRepository.findById(heroId)).thenReturn(Optional.of(hero));
 
-        heroService.update(heroId, updateRequest);
+        updateHeroUseCase.execute(heroId, updateRequest);
 
         assertThat(hero.getName()).isEqualTo("Superman Updated");
         verify(heroRepository).update(hero);
@@ -153,7 +166,7 @@ class HeroServiceTest {
         when(heroRepository.findById(heroId)).thenReturn(Optional.of(hero));
         when(powerStatsRepository.findById(powerStatsId)).thenReturn(Optional.of(powerStats));
 
-        heroService.update(heroId, updateRequest);
+        updateHeroUseCase.execute(heroId, updateRequest);
 
         assertThat(powerStats.getStrength()).isEqualTo(95);
         assertThat(powerStats.getAgility()).isEqualTo(85);
@@ -168,7 +181,7 @@ class HeroServiceTest {
 
         when(heroRepository.findById(heroId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> heroService.update(heroId, updateRequest))
+        assertThatThrownBy(() -> updateHeroUseCase.execute(heroId, updateRequest))
                 .isInstanceOf(HeroNotFoundException.class)
                 .hasMessageContaining(heroId.toString());
     }
@@ -177,7 +190,7 @@ class HeroServiceTest {
     void delete_shouldDeleteHeroAndPowerStatsSuccessfully() {
         when(heroRepository.findById(heroId)).thenReturn(Optional.of(hero));
 
-        heroService.delete(heroId);
+        deleteHeroUseCase.execute(heroId);
 
         verify(heroRepository).delete(heroId);
         verify(powerStatsRepository).delete(powerStatsId);
@@ -187,7 +200,7 @@ class HeroServiceTest {
     void delete_shouldThrowHeroNotFoundExceptionWhenHeroNotFound() {
         when(heroRepository.findById(heroId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> heroService.delete(heroId))
+        assertThatThrownBy(() -> deleteHeroUseCase.execute(heroId))
                 .isInstanceOf(HeroNotFoundException.class)
                 .hasMessageContaining(heroId.toString());
     }

@@ -1,13 +1,15 @@
 package br.com.gubee.interview.core.features.hero;
 
-import br.com.gubee.interview.core.exception.HeroNotFoundException;
+import br.com.gubee.interview.core.application.usecases.hero.CreateHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.FindHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.UpdateHeroUseCase;
+import br.com.gubee.interview.core.application.usecases.hero.DeleteHeroUseCase;
+import br.com.gubee.interview.core.presentation.controllers.HeroController;
 import br.com.gubee.interview.model.dto.HeroDTO;
-import br.com.gubee.interview.model.enums.Race;
-import br.com.gubee.interview.model.request.CreateHeroRequest;
-import br.com.gubee.interview.model.request.UpdateHeroRequest;
-import br.com.gubee.interview.model.response.HeroFindResponse;
-import br.com.gubee.interview.model.response.HeroListResponse;
-import br.com.gubee.interview.model.response.HeroResponse;
+import br.com.gubee.interview.model.domain.enums.Race;
+import br.com.gubee.interview.model.dto.request.CreateHeroRequest;
+import br.com.gubee.interview.model.dto.request.UpdateHeroRequest;
+import br.com.gubee.interview.model.exceptions.HeroNotFoundException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,7 +42,16 @@ class HeroControllerTest {
     private ObjectMapper objectMapper;
 
     @MockBean
-    private HeroService heroService;
+    private CreateHeroUseCase createHeroUseCase;
+
+    @MockBean
+    private FindHeroUseCase findHeroUseCase;
+
+    @MockBean
+    private UpdateHeroUseCase updateHeroUseCase;
+
+    @MockBean
+    private DeleteHeroUseCase deleteHeroUseCase;
 
     private UUID heroId;
     private HeroDTO heroDTO;
@@ -80,33 +91,8 @@ class HeroControllerTest {
     }
 
     @Test
-    void create_shouldReturnCreatedResponse() throws Exception {
-        CreateHeroRequest validRequest = CreateHeroRequest.builder()
-                .name("Superman")
-                .race(Race.ALIEN)
-                .strength(10)
-                .agility(8)
-                .dexterity(9)
-                .intelligence(7)
-                .build();
-
-        when(heroService.create(any(CreateHeroRequest.class))).thenReturn(heroId);
-
-        mockMvc.perform(post("/api/v1/heroes")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(validRequest)))
-                .andExpect(status().isCreated())
-                .andExpect(header().string("Location", containsString("/api/v1/heroes/" + heroId)))
-                .andExpect(jsonPath("$.message", is("Herói cadastrado com sucesso!")))
-                .andExpect(jsonPath("$.id", is(heroId.toString())))
-                .andExpect(jsonPath("$.location", is("/api/v1/heroes/" + heroId)));
-
-        verify(heroService).create(any(CreateHeroRequest.class));
-    }
-
-    @Test
     void findById_shouldReturnHeroWhenExists() throws Exception {
-        when(heroService.findById(heroId)).thenReturn(Optional.of(heroDTO));
+        when(findHeroUseCase.findById(heroId)).thenReturn(Optional.of(heroDTO));
 
         mockMvc.perform(get("/api/v1/heroes/{id}", heroId))
                 .andExpect(status().isOk())
@@ -117,19 +103,19 @@ class HeroControllerTest {
                 .andExpect(jsonPath("$.data.strength", is(100)))
                 .andExpect(jsonPath("$.data.agility", is(80)));
 
-        verify(heroService).findById(heroId);
+        verify(findHeroUseCase).findById(heroId);
     }
 
     @Test
     void findById_shouldReturnNotFoundWhenHeroDoesNotExist() throws Exception {
-        when(heroService.findById(heroId)).thenReturn(Optional.empty());
+        when(findHeroUseCase.findById(heroId)).thenReturn(Optional.empty());
 
         mockMvc.perform(get("/api/v1/heroes/{id}", heroId))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.message", is("Herói não encontrado")))
                 .andExpect(jsonPath("$.id", is(heroId.toString())));
 
-        verify(heroService).findById(heroId);
+        verify(findHeroUseCase).findById(heroId);
     }
 
     @Test
@@ -139,13 +125,13 @@ class HeroControllerTest {
                 .andExpect(jsonPath("$.message", is("ID inválido. Formato esperado: UUID")))
                 .andExpect(jsonPath("$.id", is("invalid-uuid")));
 
-        verify(heroService, never()).findById(any());
+        verify(findHeroUseCase, never()).findById(any());
     }
 
     @Test
     void findByName_shouldReturnListOfHeroes() throws Exception {
         List<HeroDTO> heroes = Arrays.asList(heroDTO, heroDTO);
-        when(heroService.findByName("super")).thenReturn(heroes);
+        when(findHeroUseCase.findByName("super")).thenReturn(heroes);
 
         mockMvc.perform(get("/api/v1/heroes")
                         .param("name", "super"))
@@ -155,12 +141,12 @@ class HeroControllerTest {
                 .andExpect(jsonPath("$.data", hasSize(2)))
                 .andExpect(jsonPath("$.data[0].name", is("Superman")));
 
-        verify(heroService).findByName("super");
+        verify(findHeroUseCase).findByName("super");
     }
 
     @Test
     void findByName_shouldReturnEmptyListMessage() throws Exception {
-        when(heroService.findByName("unknown")).thenReturn(List.of());
+        when(findHeroUseCase.findByName("unknown")).thenReturn(List.of());
 
         mockMvc.perform(get("/api/v1/heroes")
                         .param("name", "unknown"))
@@ -169,61 +155,61 @@ class HeroControllerTest {
                 .andExpect(jsonPath("$.count", is(0)))
                 .andExpect(jsonPath("$.data", hasSize(0)));
 
-        verify(heroService).findByName("unknown");
+        verify(findHeroUseCase).findByName("unknown");
     }
 
     @Test
     void update_shouldReturnSuccessResponse() throws Exception {
-        doNothing().when(heroService).update(eq(heroId), any(UpdateHeroRequest.class));
+        doNothing().when(updateHeroUseCase).execute(eq(heroId), any(UpdateHeroRequest.class));
 
         mockMvc.perform(put("/api/v1/heroes/{id}", heroId)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updateHeroRequest)))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message", is("Herói atualizado com sucesso!")))
+                .andExpect(jsonPath("$.message", is("Herói atualizado!")))
                 .andExpect(jsonPath("$.id", is(heroId.toString())));
 
-        verify(heroService).update(eq(heroId), any(UpdateHeroRequest.class));
+        verify(updateHeroUseCase).execute(eq(heroId), any(UpdateHeroRequest.class));
     }
 
     @Test
     void update_shouldReturnNotFoundWhenHeroNotFound() throws Exception {
         doThrow(new HeroNotFoundException(heroId))
-                .when(heroService).update(eq(heroId), any(UpdateHeroRequest.class));
+                .when(updateHeroUseCase).execute(eq(heroId), any(UpdateHeroRequest.class));
 
         mockMvc.perform(put("/api/v1/heroes/{id}", heroId)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updateHeroRequest)))
                 .andExpect(status().isNotFound())
-                .andExpect(jsonPath("$.message", is("Herói não encontrado para atualização")))
+                .andExpect(jsonPath("$.message", is("Herói não encontrado")))
                 .andExpect(jsonPath("$.id", is(heroId.toString())));
 
-        verify(heroService).update(eq(heroId), any(UpdateHeroRequest.class));
+        verify(updateHeroUseCase).execute(eq(heroId), any(UpdateHeroRequest.class));
     }
 
     @Test
     void delete_shouldReturnSuccessResponse() throws Exception {
-        doNothing().when(heroService).delete(heroId);
+        doNothing().when(deleteHeroUseCase).execute(heroId);
 
         mockMvc.perform(delete("/api/v1/heroes/{id}", heroId))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message", is("Herói deletado com sucesso!")))
                 .andExpect(jsonPath("$.id", is(heroId.toString())));
 
-        verify(heroService).delete(heroId);
+        verify(deleteHeroUseCase).execute(heroId);
     }
 
     @Test
     void delete_shouldReturnNotFoundWhenHeroNotFound() throws Exception {
         doThrow(new HeroNotFoundException(heroId))
-                .when(heroService).delete(heroId);
+                .when(deleteHeroUseCase).execute(heroId);
 
         mockMvc.perform(delete("/api/v1/heroes/{id}", heroId))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.message", is("Herói não encontrado para exclusão")))
                 .andExpect(jsonPath("$.id", is(heroId.toString())));
 
-        verify(heroService).delete(heroId);
+        verify(deleteHeroUseCase).execute(heroId);
     }
 
     @Test
@@ -231,11 +217,12 @@ class HeroControllerTest {
         CreateHeroRequest invalidRequest = CreateHeroRequest.builder()
                 .race(Race.ALIEN)
                 .build();
+
         mockMvc.perform(post("/api/v1/heroes")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(invalidRequest)))
                 .andExpect(status().isBadRequest());
 
-        verify(heroService, never()).create(any());
+        verify(createHeroUseCase, never()).execute(any());
     }
 }

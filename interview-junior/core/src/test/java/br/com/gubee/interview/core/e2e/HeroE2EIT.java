@@ -2,8 +2,8 @@ package br.com.gubee.interview.core.e2e;
 
 import br.com.gubee.interview.core.Application;
 import br.com.gubee.interview.core.features.hero.BaseIntegrationTest;
-import br.com.gubee.interview.model.request.CreateHeroRequest;
-import br.com.gubee.interview.model.enums.Race;
+import br.com.gubee.interview.model.dto.request.CreateHeroRequest;
+import br.com.gubee.interview.model.domain.enums.Race;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
