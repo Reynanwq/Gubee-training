@@ -65,3 +65,73 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 [INFO ] [2026-02-19T09:51:46,069] [main] [TestDispatcherServlet] Initializing Servlet '' 
 [INFO ] [2026-02-19T09:51:46,070] [main] [TestDispatcherServlet] Completed initialization in 1 ms 
 [INFO ] [2026-02-19T09:51:46,104] [main] [HeroControllerTest] Started HeroControllerTest in 2.172 seconds (JVM running for 3.377) 
+[INFO ] [2026-02-19T12:24:35,488] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-02-19T12:24:35,524] [main] [Application] Starting Application using Java 21.0.10 on Reynan-Paiva with PID 3860 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-02-19T12:24:35,527] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-02-19T12:24:35,911] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2026-02-19T12:24:35,912] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2026-02-19T12:24:35,952] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2026-02-19T12:24:36,111] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2026-02-19T12:24:36,112] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-02-19T12:24:36,119] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.infrastructure.persistence.repositories.HeroJpaRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2026-02-19T12:24:36,120] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.infrastructure.persistence.repositories.PowerStatsJpaRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2026-02-19T12:24:36,120] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-02-19T12:24:36,519] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-02-19T12:24:36,528] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-02-19T12:24:36,528] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-02-19T12:24:36,529] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-02-19T12:24:36,529] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-02-19T12:24:36,647] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-02-19T12:24:36,647] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1086 ms 
+[INFO ] [2026-02-19T12:24:36,772] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2026-02-19T12:24:36,830] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2026-02-19T12:24:36,975] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2026-02-19T12:24:37,063] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2026-02-19T12:24:37,167] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2026-02-19T12:24:37,183] [main] [Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect 
+[INFO ] [2026-02-19T12:24:37,653] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2026-02-19T12:24:37,660] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2026-02-19T12:24:38,050] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2026-02-19T12:24:38,708] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-02-19T12:24:38,727] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2026-02-19T12:24:38,735] [main] [Application] Started Application in 3.459 seconds (JVM running for 4.366) 
+[INFO ] [2026-02-19T12:26:10,174] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2026-02-19T12:26:10,176] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2026-02-19T12:26:10,180] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
+[INFO ] [2026-02-19T12:27:51,127] [background-preinit] [Version] HV000001: Hibernate Validator 6.2.3.Final 
+[INFO ] [2026-02-19T12:27:51,158] [main] [Application] Starting Application using Java 21.0.10 on Reynan-Paiva with PID 18404 (C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core\target\classes started by Reynan Paiva in C:\Users\Reynan Paiva\Downloads\mongodb-game\Gubee-training\interview-junior\core) 
+[INFO ] [2026-02-19T12:27:51,162] [main] [Application] No active profile set, falling back to 1 default profile: "default" 
+[INFO ] [2026-02-19T12:27:51,502] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2026-02-19T12:27:51,503] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[INFO ] [2026-02-19T12:27:51,537] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces. 
+[INFO ] [2026-02-19T12:27:51,673] [main] [RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode! 
+[INFO ] [2026-02-19T12:27:51,674] [main] [RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+[INFO ] [2026-02-19T12:27:51,681] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.infrastructure.persistence.repositories.HeroJpaRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2026-02-19T12:27:51,682] [main] [RepositoryConfigurationExtensionSupport] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.com.gubee.interview.core.infrastructure.persistence.repositories.PowerStatsJpaRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table. 
+[INFO ] [2026-02-19T12:27:51,682] [main] [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces. 
+[INFO ] [2026-02-19T12:27:52,058] [main] [TomcatWebServer] Tomcat initialized with port(s): 8080 (http) 
+[INFO ] [2026-02-19T12:27:52,065] [main] [Http11NioProtocol] The ["http-nio-8080"] connector has been configured to support HTTP upgrade to [h2c] 
+[INFO ] [2026-02-19T12:27:52,065] [main] [Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-02-19T12:27:52,066] [main] [StandardService] Starting service [Tomcat] 
+[INFO ] [2026-02-19T12:27:52,066] [main] [StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.62] 
+[INFO ] [2026-02-19T12:27:52,170] [main] [[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] [2026-02-19T12:27:52,172] [main] [ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 980 ms 
+[INFO ] [2026-02-19T12:27:52,273] [main] [LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default] 
+[INFO ] [2026-02-19T12:27:52,311] [main] [Version] HHH000412: Hibernate ORM core version 5.6.8.Final 
+[INFO ] [2026-02-19T12:27:52,424] [main] [Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+[INFO ] [2026-02-19T12:27:52,496] [main] [HikariDataSource] HikariPool-1 - Starting... 
+[INFO ] [2026-02-19T12:27:52,569] [main] [HikariDataSource] HikariPool-1 - Start completed. 
+[INFO ] [2026-02-19T12:27:52,581] [main] [Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect 
+[INFO ] [2026-02-19T12:27:52,986] [main] [JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+[INFO ] [2026-02-19T12:27:52,992] [main] [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[WARN ] [2026-02-19T12:27:53,356] [main] [JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+[INFO ] [2026-02-19T12:27:54,027] [main] [Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"] 
+[INFO ] [2026-02-19T12:27:54,043] [main] [TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path '' 
+[INFO ] [2026-02-19T12:27:54,049] [main] [Application] Started Application in 3.111 seconds (JVM running for 3.792) 
+[INFO ] [2026-02-19T12:31:38,884] [http-nio-8080-exec-1] [[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] [2026-02-19T12:31:38,884] [http-nio-8080-exec-1] [DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] [2026-02-19T12:31:38,885] [http-nio-8080-exec-1] [DispatcherServlet] Completed initialization in 1 ms 
+[INFO ] [2026-02-19T12:31:39,385] [http-nio-8080-exec-10] [AbstractOpenApiResource] Init duration for springdoc-openapi is: 220 ms 
+[INFO ] [2026-02-19T12:31:53,318] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default' 
+[INFO ] [2026-02-19T12:31:53,320] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown initiated... 
+[INFO ] [2026-02-19T12:31:53,325] [SpringApplicationShutdownHook] [HikariDataSource] HikariPool-1 - Shutdown completed. 
