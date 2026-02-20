@@ -1,0 +1,16 @@
+br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroInput.class
+br/com/gubee/interview/application/hero/useCases/CreateHeroUseCase.class
+br/com/gubee/interview/application/hero/exception/ObjectNotFoundException.class
+br/com/gubee/interview/application/hero/useCases/GetHeroesUseCase.class
+br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesService.class
+br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesInput.class
+br/com/gubee/interview/application/exceptions/StandardError.class
+br/com/gubee/interview/application/hero/useCases/CompareHeroesUseCase.class
+br/com/gubee/interview/application/hero/service/GetHeroesService.class
+br/com/gubee/interview/application/exceptions/ResourceExceptionHandler.class
+br/com/gubee/interview/application/hero/service/create_hero/CreateHeroInput.class
+br/com/gubee/interview/application/hero/useCases/UpdateHeroUseCase.class
+br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroService.class
+br/com/gubee/interview/application/hero/service/create_hero/CreateHeroService.class
+br/com/gubee/interview/application/hero/useCases/DeleteHeroUseCase.class
+br/com/gubee/interview/application/hero/service/delete_hero/DeleteHeroService.class

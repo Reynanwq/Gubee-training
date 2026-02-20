@@ -1,0 +1,17 @@
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/delete_hero/DeleteHeroService.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroService.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesService.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/exceptions/StandardError.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CreateHeroUseCase.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/useCases/UpdateHeroUseCase.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/GetHeroesService.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/exception/ObjectNotFoundException.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/useCases/GetHeroesUseCase.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/useCases/DeleteHeroUseCase.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/exceptions/GlobalExceptionHandler.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CompareHeroesUseCase.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroInput.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroService.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/exceptions/ResourceExceptionHandler.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesInput.java
+/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroInput.java

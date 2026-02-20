@@ -1,0 +1,6 @@
+br/com/gubee/interview/domain/adapters/SaveHeroPort.class
+br/com/gubee/interview/domain/adapters/DeleteHeroPort.class
+br/com/gubee/interview/domain/vo/PowerStats.class
+br/com/gubee/interview/domain/adapters/LoadHeroPort.class
+br/com/gubee/interview/domain/model/Hero.class
+br/com/gubee/interview/domain/enums/Race.class
