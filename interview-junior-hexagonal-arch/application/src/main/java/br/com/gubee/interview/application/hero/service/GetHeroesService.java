@@ -9,11 +9,9 @@ import java.util.List;
 public class GetHeroesService implements GetHeroesUseCase {
 
     private final LoadHeroPort heroRepository;
-
     public GetHeroesService(LoadHeroPort heroRepository) {
         this.heroRepository = heroRepository;
     }
-
     public List<Hero> execute(){
         return heroRepository.findAll();
     }

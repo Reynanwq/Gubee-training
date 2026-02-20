@@ -6,8 +6,6 @@ import jakarta.validation.constraints.NotNull;
 import java.io.Serial;
 import java.io.Serializable;
 
-
-
 public class PowerStats implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -32,9 +30,6 @@ public class PowerStats implements Serializable {
     @NotNull(message = "message.powerstats.intelligence.mandatory")
     private Integer intelligence;
 
-
-
-
     public PowerStats() {
 
     }
@@ -46,43 +41,30 @@ public class PowerStats implements Serializable {
         this.intelligence = intelligence;
     }
 
-
-
-
     public Integer getStrength() {
         return strength;
     }
-
     public void setStrength(Integer strength) {
         this.strength = strength;
     }
-
     public Integer getAgility() {
         return agility;
     }
-
     public void setAgility(Integer agility) {
         this.agility = agility;
     }
-
     public Integer getDexterity() {
         return dexterity;
     }
-
     public void setDexterity(Integer dexterity) {
         this.dexterity = dexterity;
     }
-
     public Integer getIntelligence() {
         return intelligence;
     }
-
     public void setIntelligence(Integer intelligence) {
         this.intelligence = intelligence;
     }
-
-
-
 
     @Override
     public String toString() {
@@ -93,6 +75,4 @@ public class PowerStats implements Serializable {
                 ", intelligence=" + intelligence +
                 '}';
     }
-
-
 }

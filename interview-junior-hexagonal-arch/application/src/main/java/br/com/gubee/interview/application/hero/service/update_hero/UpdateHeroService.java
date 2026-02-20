@@ -18,8 +18,6 @@ public class UpdateHeroService implements UpdateHeroUseCase {
         this.loadHeroPort = loadHeroPort;
     }
 
-
-
     public Hero execute(UpdateHeroInput input) {
         return loadHeroPort.findById(input.getId())
                 .map(hero -> {
@@ -31,5 +29,4 @@ public class UpdateHeroService implements UpdateHeroUseCase {
                 })
                 .orElseThrow(() -> new ObjectNotFoundException(input.getId()));
     }
-
 }

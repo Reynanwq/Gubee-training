@@ -11,17 +11,11 @@ import java.util.Objects;
 public class Hero implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
     private ObjectId id;
-
     private String name;
-
     private Race race;
-
     private Boolean enabled;
-
     private PowerStats powerStats;
-
 
     public Hero() {
     }
@@ -34,48 +28,36 @@ public class Hero implements Serializable {
         this.enabled = enabled;
     }
 
-
     public String getId() {
         return id != null ? id.toString() : null;
     }
-
     public void setId( ObjectId id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public Race getRace() {
         return race;
     }
-
     public void setRace(Race race) {
         this.race = race;
     }
-
     public PowerStats getPowerStats() {
         return powerStats;
     }
-
     public void setPowerStats(PowerStats powerStats) {
         this.powerStats = powerStats;
     }
-
     public Boolean isEnabled() {
         return enabled;
     }
-
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
-
-
 
     @Override
     public boolean equals(Object o) {
@@ -100,7 +82,4 @@ public class Hero implements Serializable {
                 ", enabled=" + enabled +
                 '}';
     }
-
-
-
 }

@@ -5,7 +5,5 @@ import br.com.gubee.interview.application.hero.service.create_hero.CreateHeroInp
 import java.util.Map;
 
 public interface CreateHeroUseCase {
-
     public Map<String, Object> execute(CreateHeroInput input);
-
 }

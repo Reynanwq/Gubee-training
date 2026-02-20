@@ -46,5 +46,4 @@ public class MongoConfig {
                 new MongoOffsetDateTimeReader()
                 ));
     }
-
 }

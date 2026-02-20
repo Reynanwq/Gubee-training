@@ -4,7 +4,5 @@ import br.com.gubee.interview.application.hero.service.update_hero.UpdateHeroInp
 import br.com.gubee.interview.domain.model.Hero;
 
 public interface UpdateHeroUseCase {
-
     public Hero execute(UpdateHeroInput input);
-
 }

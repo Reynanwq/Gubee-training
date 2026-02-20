@@ -41,8 +41,6 @@ public class UpdateHeroInput {
         return id;
     }
 
-
-
     public String getName() {
         return name;
     }

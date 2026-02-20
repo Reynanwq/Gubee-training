@@ -5,6 +5,5 @@ import br.com.gubee.interview.application.hero.service.compare_heroes.CompareHer
 import java.util.Map;
 
 public interface CompareHeroesUseCase {
-
     Map<String, Object> execute(CompareHeroesInput input);
 }
