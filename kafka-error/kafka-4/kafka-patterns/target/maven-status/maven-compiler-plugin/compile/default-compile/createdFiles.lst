@@ -1,0 +1,6 @@
+com\example\patterns\consumer\RedirectOrderConsumer.class
+com\example\patterns\KafkaPatternsApplication.class
+com\example\patterns\consumer\SimpleConsumers.class
+com\example\patterns\TestRunner.class
+com\example\patterns\config\KafkaConfig.class
+com\example\patterns\producer\TestProducer.class

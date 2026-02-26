@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e09111e2-2c90-474c-980d-edfe5c7831b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Design Patterns/ecommerce-gof-patterns" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design Patterns/ecommerce-gof-patterns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/CoolRequestSetting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-09-23-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-09-24-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-09-25-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-09-26-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-09-27-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/application-2024-10-01-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout-2024-09-24-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout-2024-09-25-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout-2024-09-26-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout-2024-09-27-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout-2024-10-01-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/logs/stdout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/exceptions/ResourceExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/exceptions/StandardError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/exception/ObjectNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/GetHeroesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/delete_hero/DeleteHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CompareHeroesUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CreateHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/useCases/DeleteHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/useCases/GetHeroesUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/java/br/com/gubee/interview/application/hero/useCases/UpdateHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/resources/application-it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/src/test/java/br/com/gubee/interview/application/exceptions/ResourceExceptionHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/classes/application-it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/surefire-reports/TEST-br.com.gubee.interview.application.exceptions.ResourceExceptionHandlerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/surefire-reports/br.com.gubee.interview.application.exceptions.ResourceExceptionHandlerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/application/target/teste-gubee-core-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/adapters/DeleteHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/adapters/LoadHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/adapters/SaveHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/enums/Race.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/model/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/src/main/java/br/com/gubee/interview/domain/vo/PowerStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/domain/target/teste-gubee-model-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/logs/stdout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/InfrastructureApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/config/ServiceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/CompareHeroesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/CreateHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/DeleteHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/GetHeroesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/UpdateHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroEntityPersistence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroMongoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroPersistenceAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/configuration/MongoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/configuration/WebConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/util/MongoOffsetDateTimeReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/java/com/guilhermehermes/infrastructure/util/MongoOffsetDateTimeWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/infrastructure/src/test/java/com/guilhermehermes/infrastructure/InfrastructureApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../interview-junior-hexagonal-arch/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Reynanwq&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Reynanwq/Gubee-training.git&quot;,
+    &quot;accountId&quot;: &quot;52a38e39-7cfb-48fd-980b-dab011dd5fb6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3ABGb9FuD9jFNphrFGVFPH63i9M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Reynan Paiva/Downloads/mongodb-game/Gubee-training/kafka-error/kafka-4&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kafka-4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kafka-4" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e09111e2-2c90-474c-980d-edfe5c7831b0" name="Changes" comment="" />
+      <created>1772058618574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772058618574</updated>
+    </task>
+    <servers />
+  </component>
+</project>

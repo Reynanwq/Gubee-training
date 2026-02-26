@@ -1,0 +1,45 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-patterns-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      # Pattern 1: retry infinito — nunca descarta a mensagem, bloqueia o offset para sempre
+      backoff:
+        max-attempts: -1   # -1 = ilimitado
+        delay: 5000        # 5 segundos entre tentativas
+
+# Topics used by each pattern
+kafka:
+  topics:
+    # Pattern 1 - Stop on Error
+    p1-source: p1-source-topic
+    p1-target: p1-target-topic
+
+    # Pattern 2 - Dead Letter Queue
+    p2-source: p2-source-topic
+    p2-target: p2-target-topic
+    p2-error: p2-error-topic
+
+    # Pattern 3 - Retry Topic
+    p3-source: p3-source-topic
+    p3-target: p3-target-topic
+    p3-error: p3-error-topic
+    p3-retry: p3-retry-topic
+
+    # Pattern 4 - Ordered Retry
+    p4-source: p4-source-topic
+    p4-target: p4-target-topic
+    p4-error: p4-error-topic
+    p4-retry: p4-retry-topic
+    p4-redirect: p4-redirect-topic
+
+logging:
+  level:
+    com.example.kafka: DEBUG
