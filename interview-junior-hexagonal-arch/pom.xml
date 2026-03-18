@@ -40,9 +40,8 @@
     </properties>
 
     <modules>
-        <module>domain</module>
-        <module>application</module>
-        <module>infrastructure</module>
+        <module>core</module>
+        <module>model</module>
     </modules>
 
     <dependencyManagement>

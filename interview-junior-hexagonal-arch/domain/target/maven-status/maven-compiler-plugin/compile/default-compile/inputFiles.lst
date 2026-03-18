@@ -1,6 +1,0 @@
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/enums/Race.java
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/model/Hero.java
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/adapters/LoadHeroPort.java
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/adapters/SaveHeroPort.java
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/vo/PowerStats.java
-/home/guilhermehermes/Documentos/GitHub/CleanHeroAPI/domain/src/main/java/br/com/gubee/interview/domain/adapters/DeleteHeroPort.java

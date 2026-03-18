@@ -12,6 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class RedirectOrderConsumer {
 
     private final Map<String, String> activeRetries = new ConcurrentHashMap<>();
+
+
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public RedirectOrderConsumer(KafkaTemplate<String, String> kafkaTemplate) {

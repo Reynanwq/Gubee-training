@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5c17b15-86d1-4883-982f-c63345b3c309" name="Changes" comment="fix: change log">
+      <change afterPath="$PROJECT_DIR$/configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/ecommerce-gof-patterns" beforeDir="false" afterPath="$PROJECT_DIR$/../Design Patterns/ecommerce-gof-patterns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CoolRequestSetting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-09-23-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-09-24-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-09-25-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-09-26-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-09-27-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/application-2024-10-01-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout-2024-09-24-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout-2024-09-25-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout-2024-09-26-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout-2024-09-27-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout-2024-10-01-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/logs/stdout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/exceptions/ResourceExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/exceptions/StandardError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/exception/ObjectNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/GetHeroesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/compare_heroes/CompareHeroesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/create_hero/CreateHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/delete_hero/DeleteHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/service/update_hero/UpdateHeroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CompareHeroesUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/useCases/CreateHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/useCases/DeleteHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/useCases/GetHeroesUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/gubee/interview/application/hero/useCases/UpdateHeroUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application-it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/br/com/gubee/interview/application/exceptions/ResourceExceptionHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/classes/application-it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/surefire-reports/TEST-br.com.gubee.interview.application.exceptions.ResourceExceptionHandlerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/surefire-reports/br.com.gubee.interview.application.exceptions.ResourceExceptionHandlerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/teste-gubee-core-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/adapters/DeleteHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/adapters/LoadHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/adapters/SaveHeroPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/enums/Race.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/model/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/gubee/interview/domain/vo/PowerStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/teste-gubee-model-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/logs/stdout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/InfrastructureApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/config/ServiceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/CompareHeroesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/CreateHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/DeleteHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/GetHeroesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/in/web/UpdateHeroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroEntityPersistence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroMongoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/adapter/out/persistence/HeroPersistenceAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/configuration/MongoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/configuration/WebConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/util/MongoOffsetDateTimeReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/guilhermehermes/infrastructure/util/MongoOffsetDateTimeWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/guilhermehermes/infrastructure/InfrastructureApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Reynanwq&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Reynanwq/Gubee-training.git&quot;,
+    &quot;accountId&quot;: &quot;52a38e39-7cfb-48fd-980b-dab011dd5fb6&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="38DQzocZdvmkaG5dKFCxWbkcRbH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.HeroControllerTest.createAHeroWithAllRequiredArguments.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.HeroControllerTest.create_shouldReturnCreatedResponse.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Reynan Paiva/Downloads/mongodb-game/Gubee-training/interview-junior&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.HeroControllerTest.create_shouldReturnCreatedResponse">
+    <configuration name="HeroControllerTest.createAHeroWithAllRequiredArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interview-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gubee.interview.core.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gubee.interview.core.features.hero" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gubee.interview.core.features.hero.HeroControllerTest" />
+      <option name="METHOD_NAME" value="createAHeroWithAllRequiredArguments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeroControllerTest.create_shouldReturnCreatedResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interview-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gubee.interview.core.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gubee.interview.core.features.hero" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gubee.interview.core.features.hero.HeroControllerTest" />
+      <option name="METHOD_NAME" value="create_shouldReturnCreatedResponse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="interview-junior" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="interview-junior" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HeroControllerTest.create_shouldReturnCreatedResponse" />
+        <item itemvalue="JUnit.HeroControllerTest.createAHeroWithAllRequiredArguments" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5c17b15-86d1-4883-982f-c63345b3c309" name="Changes" comment="" />
+      <created>1768331927043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768331927043</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat: challenge project 02">
+      <option name="closed" value="true" />
+      <created>1768332052561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768332052561</updated>
+    </task>
+    <task id="LOCAL-00002" summary="build: configure project environment">
+      <option name="closed" value="true" />
+      <created>1768486964327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768486964327</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: fixing a bug in the hero registration endpoint">
+      <option name="closed" value="true" />
+      <created>1768497852292</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768497852292</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add CRUD endpoints">
+      <option name="closed" value="true" />
+      <created>1768563500882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768563500882</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: CRUD endpoints">
+      <option name="closed" value="true" />
+      <created>1768776956209</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768776956209</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: CRUD endpoints">
+      <option name="closed" value="true" />
+      <created>1768776979581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768776979581</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: CRUD endpoints">
+      <option name="closed" value="true" />
+      <created>1768776985498</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768776985498</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: add DTO">
+      <option name="closed" value="true" />
+      <created>1768782114904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768782114904</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add unit, integration, and e2e tests">
+      <option name="closed" value="true" />
+      <created>1768830760499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768830760499</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: change log">
+      <option name="closed" value="true" />
+      <created>1768901708160</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768901708160</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: challenge project 02" />
+    <MESSAGE value="build: configure project environment" />
+    <MESSAGE value="feat: fixing a bug in the hero registration endpoint" />
+    <MESSAGE value="feat: add CRUD endpoints" />
+    <MESSAGE value="fix: CRUD endpoints" />
+    <MESSAGE value="fix: add DTO" />
+    <MESSAGE value="feat: add unit, integration, and e2e tests" />
+    <MESSAGE value="fix: change log" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: change log" />
+  </component>
+</project>

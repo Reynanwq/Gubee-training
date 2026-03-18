@@ -1,0 +1,108 @@
+spring:
+  application:
+    name: resilience-patterns-demo
+
+server:
+  port: 8080
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      apiService:
+        register-health-indicator: true
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10  # analisa as últimas 10 chamadas
+        minimum-number-of-calls: 5 # precisa de ao menos 5 chamadas para calcular
+        permitted-number-of-calls-in-half-open-state: 3  # testa com 3 chamadas no HALF-OPEN
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s # fica aberto por 5s, depois tenta HALF-OPEN
+        failure-rate-threshold: 50 # se 50% falhar → abre o circuito
+        event-consumer-buffer-size: 10
+        record-exceptions:
+          - java.io.IOException
+          - java.net.SocketTimeoutException
+          - java.util.concurrent.TimeoutException
+          - java.lang.RuntimeException
+        ignore-exceptions:
+          - java.lang.IllegalArgumentException
+
+  retry:
+    instances:
+      apiService:
+        max-attempts: 3  # tenta 3 vezes no total
+        wait-duration: 2s  # espera 2s entre cada tentativa
+        retry-exceptions:
+          - java.io.IOException
+          - java.net.SocketTimeoutException
+          - java.lang.RuntimeException
+        ignore-exceptions:
+          - java.lang.NullPointerException
+
+
+  ratelimiter:
+    instances:
+      apiService:
+        limit-for-period: 10 # máximo 10 chamadas
+        limit-refresh-period: 1s
+        timeout-duration: 0
+        subscribe-for-events: true
+        allow-health-indicator-to-fail: true
+        event-consumer-buffer-size: 50
+
+  bulkhead:
+    instances:
+      apiService:
+        max-concurrent-calls: 5
+        max-wait-duration: 10ms
+        writable-stack-trace-enabled: true
+        event-consumer-buffer-size: 50
+
+  thread-pool-bulkhead:
+    instances:
+      apiService:
+        max-thread-pool-size: 5 # máximo 5 threads simultâneas
+        core-thread-pool-size: 5
+        queue-capacity: 5  # fila de espera para mais 5
+        # Se as 5 threads + 5 da fila estiverem ocupadas → BulkheadFullException
+        keep-alive-duration: 100ms
+        writable-stack-trace-enabled: true
+        event-consumer-buffer-size: 50
+
+  timelimiter:
+    instances:
+      apiService:
+        timeout-duration: 3s # cancela se demorar mais de 3s
+        cancel-running-future: true # cancela a Future em andamento
+        event-consumer-buffer-size: 50
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,circuitbreakers,retries,ratelimiters,bulkheads
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+    ratelimiters:
+      enabled: true
+    bulkheads:
+      enabled: true
+
+logging:
+  level:
+    com.example.resiliencepatterns: DEBUG
+    io.github.resilience4j: DEBUG
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+metrics:
+  distribution:
+    percentiles-histogram:
+      http.server.requests: true
+      resilience4j.circuitbreaker.calls: true
+    slo:
+      http.server.requests: 1ms,5ms,10ms,50ms,100ms,200ms,500ms,1s,2s
